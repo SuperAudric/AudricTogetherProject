@@ -18,4 +18,17 @@ Get Main to run a window! Then, sprites...?
 - MAP generation. Will take a lot.
 - Bots!
 
-**STRUCTURE**
+**STRUCTURE:**
+- Main
+    Runs set up functions, then, launches window, watches for inputs and runs main gameplay loop.
+- Screen Handler
+    Draws each frame and moves sprites around as instructed.
+- Map Handler
+    Defines and stores the map grid, and keeps track of where each entity is.
+- Map Generator
+    Generates the map at the start of each floor from either a set or randomized seed.
+- Entity Handler
+    Defines enemy stats, sprites, states and animation.
+- Player
+    Defines player stats, sprites, responses to input, states and animation.
+
