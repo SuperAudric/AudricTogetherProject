@@ -3,9 +3,7 @@ import time
 import TestSecondFile as testName
 import ScreenController as ScreenController
 import pygame
-pygame.init()
 
-gameWindow = pygame.display.set_mode((1200, 500))
 #Main file for Ripoff Cave
 #define some variables
 delay = 0.1
