@@ -26,10 +26,10 @@ def mainLoop():
         toPrint = toPrint +"e"
         
         time.sleep(delay)
+        
         #check if someone pressed the X button
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                exit_game = True
+        if(ScreenController.HasCloseWindowButtonBeenPressed()):
+            exit_game = True
     ScreenController.CloseWindow();
 #Run them
 setup();
