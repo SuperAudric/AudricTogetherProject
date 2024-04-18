@@ -1,19 +1,18 @@
+# Main file for Ripoff Cave
 
 import time
 import TestSecondFile as testName
 import ScreenController as ScreenController
 import pygame
 
-#Main file for Ripoff Cave
-#define some variables
+# Define some variables
 delay = 0.1
 
-#Define the basic functions
+# Define the basic functions
 def setup():
-    #do setup here
-    testName.printHello();
-    print("I'm doing setup!");
-    ScreenController.CreateWindow()
+    testName.printHello();        # This is the tiny test file he built first.
+    print("I'm doing setup!")
+    ScreenController.CreateWindow()            # Wait oh we're initalizing the screen too.
 
 def mainLoop():
     toPrint = "Main loop! Wee"
@@ -28,7 +27,15 @@ def mainLoop():
         #check if someone pressed the X button
         if(ScreenController.HasCloseWindowButtonBeenPressed()):
             exit_game = True
-    ScreenController.CloseWindow();
+    ScreenController.CloseWindow()
+    
 #Run them
-setup();
-mainLoop();
+setup()
+mainLoop()            
+# May want to take the main loop out of a function, but put everything it's doing into functions instead so that it's very clearly chunked off with what does what.
+
+
+
+
+
+
