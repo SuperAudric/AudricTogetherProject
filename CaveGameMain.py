@@ -1,9 +1,7 @@
 # Main file for Ripoff Cave
 
 import time
-import TestSecondFile as testName
 import ScreenController as ScreenController
-import pygame
 
 # Define Globals
 delay = 0.1         # How often we update the screen.
@@ -23,11 +21,10 @@ def scream():
     print(screamString)
 
 
-
-
 # Run setup! Except for all the setup we just did.
 setup()
 
+### THIS IS MAIN DOING MAIN THINGS ###
 print("Starting main loop! The game is now running! Yay!")
 while (exitGame == False):
 
@@ -37,16 +34,17 @@ while (exitGame == False):
     scream()
 
     
-    time.sleep(delay)
+
     
-    #check if someone pressed the X button
+    # Check if someone pressed the X button.
     if(ScreenController.HasCloseWindowButtonBeenPressed()):
+        print("Exit button pressed.")
         exitGame = True
+
+    time.sleep(delay)
+
+print("Now exiting.")
 ScreenController.CloseWindow()      
-# May want to take the main loop out of a function, but put everything it's doing into functions instead so that it's very clearly chunked off with what does what.
-
-
-
 
 
 
