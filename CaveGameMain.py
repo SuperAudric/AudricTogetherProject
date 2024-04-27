@@ -36,6 +36,7 @@ while (exitGame == False):
     
 
     
+    ScreenController.updateWindow()
     # Check if someone pressed the X button.
     if(ScreenController.HasCloseWindowButtonBeenPressed()):
         print("Exit button pressed.")
