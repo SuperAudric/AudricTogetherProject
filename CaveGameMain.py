@@ -1,7 +1,8 @@
-# Main file for Ripoff Cave
+# Main file for Cave Cave
 
 import time
 import ScreenController as ScreenController
+import MapController
 
 # Define Globals
 delay = 0.1         # How often we update the screen.
