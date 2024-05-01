@@ -4,11 +4,11 @@ Our main note page is here.
 https://docs.google.com/document/d/1Ahsx2MOUriyxkSEOf4WmTfPmR8vMjah-hjf0bDaudO8/edit
 
 Next task:
-Get Main to run a window! Then, sprites...?
+Assemble grid of map tiles from manual arragements.
 
 
 **ALL TASKS:**
-- Game window.
+- Game window. [Done!]
 - Grid of map tiles arranged manually.
 - Sprites to represent floor, walls, player, enemy, statgem.
 - Player entity that can move with arrow keys or wads and are blocked by walls.
@@ -25,7 +25,7 @@ Get Main to run a window! Then, sprites...?
     Draws each frame and moves sprites around as instructed.
 - Map Handler -
     Defines and stores the map grid, and keeps track of where each entity is.
-- Map Generator -
+- Map Generator? -
     Generates the map at the start of each floor from either a set or randomized seed.
 - Entity Handler -
     Defines enemy stats, sprites, states and animation.
