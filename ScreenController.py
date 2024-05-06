@@ -24,12 +24,6 @@ def CreateWindow():
     pygame.display.set_caption("Ripoff Cave")
 
 
-def HasCloseWindowButtonBeenPressed():
-    for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                 return True
-    return False
-
 # Ok, so all the drawing the map and the characters stuff needs to be here.
 def updateWindow(): 
      gameWindow.blit(backgroundPNG,(0,0))  # 0,0 is top left corner of the screen.    

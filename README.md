@@ -10,7 +10,8 @@ Assemble grid of map tiles from manual arragements.
 **ALL TASKS:**
 - Game window. [Done!]
 - Grid of map tiles arranged manually.
-- Sprites to represent floor, walls, player, enemy, statgem.
+- Sprites to represent floor, walls [Done!]
+, player, enemy, statgem. TODO still
 - Player entity that can move with arrow keys or wads and are blocked by walls.
 - Enemy entities with stats.
 - Combat mechanism when player steps on an enemy.
