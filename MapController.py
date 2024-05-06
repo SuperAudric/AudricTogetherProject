@@ -48,9 +48,9 @@ class Map:
 
         self.mapArray = [[0 for i in range(self.ySize)] for j in range(self.xSize)]
 
-        for xIndex, tilerow in enumerate(self.mapArray):
-            for yIndex, tile in enumerate(tilerow):
-                self.mapArray[xIndex][yIndex] = MapTile(mapGenArray[xIndex][yIndex], xIndex*48, yIndex*48)
+        for yIndex, tilerow in enumerate(self.mapArray):
+            for xIndex, tile in enumerate(tilerow):
+                self.mapArray[yIndex][xIndex] = MapTile(mapGenArray[yIndex][xIndex], xIndex*64, yIndex*64)
 
 
     # This function returns a nicely aligned string when printed from print().
@@ -70,15 +70,15 @@ class Map:
 
 
 
-
-#manualMap = [[1, 0, 1, 1, 1, 1, 0, 0], 
-#             [1, 0, 1, 0, 0, 0, 0, 0], 
-#             [1, 0, 1, 0, 1, 0, 0, 0], 
-#             [1, 0, 0, 0, 1, 0, 0, 1], 
-#             [1, 0, 1, 1, 1, 0, 1, 0], 
-#             [1, 0, 1, 1, 0, 0, 1, 0], 
-#             [0, 0, 0, 0, 0, 1, 1, 0], 
-#             [1, 0, 1, 1, 1, 1, 0, 0]]
+def getTestMap():
+    return [[1, 0, 1, 1, 1, 1, 0, 0], 
+             [1, 0, 1, 0, 0, 0, 0, 0], 
+             [1, 0, 1, 0, 1, 0, 0, 0], 
+             [1, 0, 0, 0, 1, 0, 0, 1], 
+             [1, 0, 1, 1, 1, 0, 1, 0], 
+             [1, 0, 1, 1, 0, 0, 1, 0], 
+             [0, 0, 0, 0, 0, 1, 1, 0], 
+             [1, 0, 1, 1, 1, 1, 0, 0]]
 
 
 # print(manualMap)

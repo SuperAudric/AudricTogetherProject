@@ -1,5 +1,6 @@
 import pygame
 import os
+import MapController
 
 
 tileWidthInPixels = 64
@@ -25,9 +26,23 @@ def CreateWindow():
 
 
 # Ok, so all the drawing the map and the characters stuff needs to be here.
-def updateWindow(): 
-     gameWindow.blit(backgroundPNG,(0,0))  # 0,0 is top left corner of the screen.    
-     pygame.display.update()
+def updateWindow(gameMap:MapController.Map): 
+    gameWindow.blit(backgroundPNG,(0,0))  # 0,0 is top left corner of the screen.
+    print (gameMap)    
+    for tileRow in gameMap.mapArray:
+        for tile in tileRow:
+            displayTile(tile)
+    pygame.display.update()
+
+def displayTile(tile:MapController.MapTile):
+    image = goodGrassPNG
+    if (tile.sprite == "stone"):
+            image = stonePNG
+    if (tile.sprite == "grass"):
+            image = goodGrassPNG
+    gameWindow.blit(image,(tile.coordinates[0],tile.coordinates[1]))
+
+
 
 def CloseWindow():
     pygame.display.quit()

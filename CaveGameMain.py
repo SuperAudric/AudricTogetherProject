@@ -11,6 +11,7 @@ exitGame = False    # Whether we're still running the game.
 loopCount = 0   
 playerCoords = [3,3]
 myInputHandler = InputHandler.inputHandler()
+mainMap = MapController.Map(MapController.getTestMap(), "Main Map")
 
 # Define Functions
 def setup():
@@ -52,7 +53,7 @@ while (exitGame == False):
     
 
     
-    ScreenController.updateWindow()
+    ScreenController.updateWindow(mainMap)
     # Check if someone pressed the X button.
     if(myInputHandler.HasCloseWindowButtonBeenPressed()):
         print("Exit button pressed.")
