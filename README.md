@@ -4,12 +4,12 @@ Our main note page is here.
 https://docs.google.com/document/d/1Ahsx2MOUriyxkSEOf4WmTfPmR8vMjah-hjf0bDaudO8/edit
 
 Next task:
-Assemble grid of map tiles from manual arragements.
+Display grid of map tiles.
 
 
 **ALL TASKS:**
 - Game window. [Done!]
-- Grid of map tiles arranged manually.
+- Grid of map tiles arranged manually. [Done!]
 - Sprites to represent floor, walls, player, enemy, statgem.
 - Player entity that can move with arrow keys or wads and are blocked by walls.
 - Enemy entities with stats.
