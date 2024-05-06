@@ -23,11 +23,11 @@ class inputHandler:
         for event in self.events:
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_LEFT:
-                     movementDirection[0]-=1;
+                     movementDirection[0]-=64;
                 if event.key == pygame.K_RIGHT:
-                     movementDirection[0]+=1;
+                     movementDirection[0]+=64;
                 if event.key == pygame.K_DOWN:
-                     movementDirection[0]-=1;
+                     movementDirection[1]+=64;
                 if event.key == pygame.K_UP:
-                     movementDirection[1]+=1;
+                     movementDirection[1]-=64;
         return movementDirection

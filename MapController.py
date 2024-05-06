@@ -1,11 +1,13 @@
 #This file is in charge of storing and building maps.
 # It contains two classes - MapTile and Map.
+from MapEntity import MapEntity
 
 class MapTile:
     #This Class represents a single map tile. We will use an array of these to represent each map.
-    sprite = "grass"
+    sprite:str = "grass"
     isWalkable = True
     coordinates = [0, 0]
+    tileContents:MapEntity = None
 
     # This returns a string when printed from print().
     def __str__(self):

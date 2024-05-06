@@ -4,14 +4,17 @@ import time
 import ScreenController as ScreenController
 import MapController
 import InputHandler
-
+from Player import Player
+from Enemy import Enemy
 # Define Globals
 delay = 0.3         # How often we update the screen.
 exitGame = False    # Whether we're still running the game.
 loopCount = 0   
-playerCoords = [3,3]
 myInputHandler = InputHandler.inputHandler()
 mainMap = MapController.Map(MapController.getTestMap(), "Main Map")
+myPlayer = Player(myInputHandler)
+testEnemy = Enemy(12)
+mainMap.mapArray[2][2].tileContents=testEnemy
 
 # Define Functions
 def setup():
@@ -25,16 +28,6 @@ def scream():
         screamString = screamString + "e"
     print(screamString)
 
-def arrayAdd(arr1, arr2):
-    outputArray =[]
-    for i in range(min(len(arr1),len(arr2))):
-        outputArray.append(arr1[i]+arr2[i])
-    return outputArray
-
-def handleMovement():
-    global playerCoords
-    playerMovementDirection = myInputHandler.getPlayerMovement()
-    playerCoords = arrayAdd(playerCoords,playerMovementDirection)
 
 
 # Run setup! Except for all the setup we just did.
@@ -48,11 +41,11 @@ while (exitGame == False):
     # This is screaming "wheee" for some reason.
     #scream()
     
-    handleMovement()
+    myPlayer.handleMovement()
     
 
     
-    ScreenController.updateWindow(mainMap)
+    ScreenController.updateWindow(mainMap,myPlayer)
     # Check if someone pressed the X button.
     if(myInputHandler.HasCloseWindowButtonBeenPressed()):
         print("Exit button pressed.")
