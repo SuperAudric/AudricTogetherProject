@@ -28,7 +28,6 @@ def CreateWindow():
 # Ok, so all the drawing the map and the characters stuff needs to be here.
 def updateWindow(gameMap:MapController.Map): 
     gameWindow.blit(backgroundPNG,(0,0))  # 0,0 is top left corner of the screen.
-    print (gameMap)    
     for tileRow in gameMap.mapArray:
         for tile in tileRow:
             displayTile(tile)

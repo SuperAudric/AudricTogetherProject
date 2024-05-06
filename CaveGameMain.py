@@ -35,7 +35,6 @@ def handleMovement():
     global playerCoords
     playerMovementDirection = myInputHandler.getPlayerMovement()
     playerCoords = arrayAdd(playerCoords,playerMovementDirection)
-    print(playerCoords)
 
 
 # Run setup! Except for all the setup we just did.
