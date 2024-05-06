@@ -4,14 +4,13 @@ Our main note page is here.
 https://docs.google.com/document/d/1Ahsx2MOUriyxkSEOf4WmTfPmR8vMjah-hjf0bDaudO8/edit
 
 Next task:
-Display grid of map tiles.
+Display the grid of map tiles.
 
 
 **ALL TASKS:**
 - Game window. [Done!]
 - Grid of map tiles arranged manually. [Done!]
-- Sprites to represent floor, walls [Done!]
-, player, enemy, statgem. TODO still
+- Sprites to represent floor, walls, player, enemy, statgem. [Need temp player and enemy.]
 - Player entity that can move with arrow keys or wads and are blocked by walls.
 - Enemy entities with stats.
 - Combat mechanism when player steps on an enemy.
@@ -25,7 +24,7 @@ Display grid of map tiles.
 - Screen Handler -
     Draws each frame and moves sprites around as instructed.
 - Map Handler -
-    Defines and stores the map grid, and keeps track of where each entity is.
+    Defines, creates and stores map tiles and grids of map tiles. May add the generator to this file too.
 - Map Generator? -
     Generates the map at the start of each floor from either a set or randomized seed.
 - Entity Handler -
