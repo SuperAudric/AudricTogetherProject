@@ -71,14 +71,14 @@ class Map:
 
 
 
-manualMap = [[1, 0, 1, 1, 1, 1, 0, 0], 
-             [1, 0, 1, 0, 0, 0, 0, 0], 
-             [1, 0, 1, 0, 1, 0, 0, 0], 
-             [1, 0, 0, 0, 1, 0, 0, 1], 
-             [1, 0, 1, 1, 1, 0, 1, 0], 
-             [1, 0, 1, 1, 0, 0, 1, 0], 
-             [0, 0, 0, 0, 0, 1, 1, 0], 
-             [1, 0, 1, 1, 1, 1, 0, 0]]
+#manualMap = [[1, 0, 1, 1, 1, 1, 0, 0], 
+#             [1, 0, 1, 0, 0, 0, 0, 0], 
+#             [1, 0, 1, 0, 1, 0, 0, 0], 
+#             [1, 0, 0, 0, 1, 0, 0, 1], 
+#             [1, 0, 1, 1, 1, 0, 1, 0], 
+#             [1, 0, 1, 1, 0, 0, 1, 0], 
+#             [0, 0, 0, 0, 0, 1, 1, 0], 
+#             [1, 0, 1, 1, 1, 1, 0, 0]]
 
 
 # print(manualMap)
@@ -98,7 +98,3 @@ manualMap = [[1, 0, 1, 1, 1, 1, 0, 0],
 # Let's see... I need an array of this shit, alongside some means of contructing them...
 # Eventually we'll have a generator to contruct maps for us, but we need a way of doing them manually too.
 # That way of doing it manually needs to be at least semi-readable. 
-
-
-
-#exit()
